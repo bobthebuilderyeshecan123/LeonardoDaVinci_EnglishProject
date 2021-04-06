@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="leo.css">
     </head>
     <body>
-        <script type="module" href="leo.js"></script>
         <h1>Leonardo Da Vinci</h1>
         <img id="pic" class="center" src="https://www.biography.com/.image/t_share/MTY2MzU4MjUzMDA4MDcwMzE4/portrait-of-leonardo-da-vinci-1452-1519-getty.jpg" alt="Leonardo Da Vinci Picture" width="500" height="500">
         <p id="demo" class="ans"></p>
@@ -44,7 +43,7 @@
                 setTimeout(function(){ document.getElementById('schoolp').innerHTML = ""; }, 1000);
             });
             document.getElementById('paintings').addEventListener("mouseover", function(){
-                document.getElementById('paintp').innerHTML = "Leonardo Da Vinci is best known for his paintings. His most famous paintings include the mona lisa, a life like woman, the first of its time, and the last supper, a painting of jesus nd his followers.";
+                document.getElementById('paintp').innerHTML = "Leonardo Da Vinci is best known for his paintings. His most famous paintings include the Mona Lisa, a life-like woman, the first of its time, and the Last Supper, a painting of Jesus and his followers.";
             });           
             document.getElementById('paintings').addEventListener("mouseout", function(){
                 setTimeout(function(){ document.getElementById('paintp').innerHTML = ""; }, 1000);
@@ -62,8 +61,8 @@
                 setTimeout(function(){ document.getElementById('inventions').innerHTML = ""; }, 1000);
             });         
             function myFunc() {
-                bob = window.prompt("Type who this text in Jeopardy Form is about and you will get to pass. He painted the last supper and the mona lisa. Make sure you have proper punctuation", "Ex. Who is bobthebuilder") 
-                if (bob === "Who Is Leonardo Da Vinci?") { 
+                bob = window.prompt("Type who this text in Jeopardy Form is about and you will get to pass. He painted the Last Supper and the Mona Lisa. Make sure you have proper punctuation and write in past tense.", "Ex. Who is bobthebuilder") 
+                if (bob === "Who was Leonardo da Vinci?") { 
                     document.getElementById('demo').innerHTML = ""
                 } else {
                     alert("You get another try. Click the ok for another chance");
