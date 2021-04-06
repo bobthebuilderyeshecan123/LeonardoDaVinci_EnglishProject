@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Leonardo Da Vinci
+        </title>
+        <link rel="stylesheet" href="leo.css">
+    </head>
+    <body>
+        <script type="module" href="leo.js"></script>
+        <h1>Leonardo Da Vinci</h1>
+        <img id="pic" class="center" src="https://www.biography.com/.image/t_share/MTY2MzU4MjUzMDA4MDcwMzE4/portrait-of-leonardo-da-vinci-1452-1519-getty.jpg" alt="Leonardo Da Vinci Picture" width="500" height="500">
+        <p id="demo" class="ans"></p>
+        <p id="span">Hover Over Me To Learn More About Leonardos Da Vinci's Childhood</span>
+        <p id="childhood" class="ans"></p>
+        <p id="school">Hover over me to learn more about Leonardo da Vinci's art school time</span>
+        <p id="schoolp" class="ans"></p>
+        <p id="paintings">Hover over me to learn more about Leonardo da Vinci's paintings</span>
+        <p id="paintp" class="ans"></p>
+        <p id="invent">Hover over me to learn more about somethings the Leonardo da Vinci invented.</p>
+        <p id="inventions" class="ans"></p>
+        <p>Hover under me to learn more about some fun facts about Leonardo Da Vinci.</p>
+
+        <ul>
+          <li id="1">Leonardo Da Vinci had an iq of around 220+</li>
+          <li id="2">He also had over 20 jobs</li>
+          <li id="3">His parents were never married, which was the cause why they "divorced"</li>
+          <li id="4">He originally was not famous. When the Mona Lisa was stolen, Leonardo Da Vinci became a sudden super star. </li>
+          <li id="5">He loved to draw from a young age.</li>
+          <li id="6">He had proven the point that "Poor is the pupil who does not surpass his master.", which is his own quote</li>
+        </ul>
+        <script>
+            document.getElementById("span").addEventListener("click", myFunc());
+            document.getElementById('span').addEventListener("mouseover", function(){
+                document.getElementById('childhood').innerHTML = "Leonardo Da Vinci was born on April 15, 1452, in Italy. He was born to Ser Piero and Caterina. He is known as Leonardo Da Vinci because he was born in Vinci. From childhood, no one loved Leonardo. His parents were not married, so his father left at birth and his mother left after 2 years. He was given to his grandparents who made sure he survived but gave him no love. The only person who cared about him slightly was his uncle francesco, who let him play in his large farm. From childhood, Leonardo would take drawings of everything around him. Paper was rare, but his father had a good business, which was one of the best thing his father gave him.  Not long after, his father sent him to art school because he had recognized Leonardos talent. This affected Leonardo the most and was his fathers greatest gift to him.";
+            });
+            document.getElementById('school').addEventListener("mouseover", function(){
+                document.getElementById('schoolp').innerHTML = "Leonardo Da Vinci went to art school to train under Andrea Del Verrocchio. After a short time, Verrocchio found out that . After a short times, he saw that Leonardo had lots of skill and more potential to be better then him. He made Leonardo a part of the painters guild.";
+            });
+            document.getElementById('span').addEventListener("mouseout", function(){
+                setTimeout(function(){ document.getElementById('childhood').innerHTML = ""; }, 1000);
+            });
+            document.getElementById('school').addEventListener("mouseout", function(){
+                setTimeout(function(){ document.getElementById('schoolp').innerHTML = ""; }, 1000);
+            });
+            document.getElementById('paintings').addEventListener("mouseover", function(){
+                document.getElementById('paintp').innerHTML = "Leonardo Da Vinci is best known for his paintings. His most famous paintings include the mona lisa, a life like woman, the first of its time, and the last supper, a painting of jesus nd his followers.";
+            });           
+            document.getElementById('paintings').addEventListener("mouseout", function(){
+                setTimeout(function(){ document.getElementById('paintp').innerHTML = ""; }, 1000);
+            });
+            document.getElementById('pic').addEventListener("mouseover", function(){
+                document.getElementById('demo').innerHTML = "Leonardo Da Vinci was an italian man who is regarded as one of the greates geniuses of all time. He was a painter, engineer, sculptor, architect, scientist, philosopher, and even a military engineer. However, this is not all of his jobs. He had many other side proffesions";
+            });
+            document.getElementById('pic').addEventListener("mouseout", function(){
+                setTimeout(function(){ document.getElementById('demo').innerHTML = ""; }, 1000);
+            });
+            document.getElementById('invent').addEventListener("mouseover", function(){
+                document.getElementById('inventions').innerHTML = "Leonardo Da Vinci created a design the bike 400 years before it was invented. He also spent a lot of his life with water, inventing a early form of scuba gear. When he worked for a king, he created many war machines, like the giant crossbow and the tribble barrel cannon. However, he is best known for his flying inventions, such as the flying machine, a contraption that looked much like the wright brothers plane. ";
+            });
+            document.getElementById('invent').addEventListener("mouseout", function(){
+                setTimeout(function(){ document.getElementById('inventions').innerHTML = ""; }, 1000);
+            });         
+            function myFunc() {
+                bob = window.prompt("Type who this text in Jeopardy Form is about and you will get to pass. He painted the last supper and the mona lisa.", "Who Is Leonardo Da Vinci") 
+                if (bob === "Who Is Leonardo Da Vinci?") { 
+                    document.getElementById('demo').innerHTML = ""
+                } else {
+                    alert("You get another try. Click the ok for another chance");
+                    window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+                }
+            }
+        </script>
+        <h1>Timeline with 5 dates of Leonardo da Vinci's life</h1>
+        <div class="timeline">
+            <div class="container right">
+              <div class="content">
+                <h2>April 5, 1492</h2>
+                <p>Leonardo Da Vinci is born to Ser Piero and Caterina in the little town of Vinci.</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>1468</h2>
+                <p>Leonardo becomes apprentice to Andrea del Verrocchio. This is where he learns all of his painting skills and hones in on them.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>1498</h2>
+                <p>Leonardo finished up the last supper, a painting that depicts jesus when he tells his followers that there is one traitor amongst them.</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>1503</h2>
+                <p>Leonardo begins his best known painting, the mona lisa. It depicts a woman who seems like she is just staring in ones eyes. Interesting fact- The Mona Lisa became famous after it was stolen from a meuseum in the 1900's.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>May 2, 1519</h2>
+                <p>Leonardo Da Vinci dies to an unkown cause, most likely belived to have been a stroke.</p>
+              </div>
+            </div>
+          </div>
+          <h2>Links to Sources</h2>
+          <a href="https://www.history.com/topics/renaissance/leonardo-da-vinci">History</a><hr>
+          <a href="https://en.wikipedia.org/wiki/Leonardo_da_Vinci">Wikipedia</a><hr>
+          <a href="https://www.britannica.com/biography/Leonardo-da-Vinci">Brittanica</a><hr>
+          <p>book - Who was Leonardo da Vinci by Roberta Edwards</p>
+    </body>
+</html>
+
